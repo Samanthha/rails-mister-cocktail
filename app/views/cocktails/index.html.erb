@@ -1,0 +1,7 @@
+<h1>See our great selection of cocktails recipes</h1>
+
+<ul>
+  <% @cocktails.each do |cocktail| %>
+    <li><%= cocktail.name %></li>
+  <% end %>
+</ul>
