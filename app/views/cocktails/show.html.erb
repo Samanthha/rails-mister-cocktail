@@ -1,4 +1,6 @@
 <h1><%= @cocktail.name %> has been created!</h1>
 
+<p><%= link_to "Add a dose to that cocktail", new_cocktail_dose_path(@cocktail) %></p>
+
 <p><%= link_to "Back to all cocktails", cocktails_path %></p>
 
