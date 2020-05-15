@@ -1,9 +1,9 @@
-<h1>See our great selection of cocktails recipes</h1>
+<h1>Welcome to Mister Cocktail!</h1>
 
 <ul>
   <% @cocktails.each do |cocktail| %>
-    <li><%= cocktail.name %></li>
+    <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
   <% end %>
 </ul>
 
-<p><%= link_to "Create your own cocktail", new_cocktail_path %></p>
+<p><%= link_to "Make my own cocktail", new_cocktail_path, class: "btn btn-primary btn-lg"%></p>
